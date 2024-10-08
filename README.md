@@ -81,7 +81,7 @@ name = 24;
 // artık age değeri sadece number tipinde değer alacaktır.
 
 let age:number=21;```
-````
+
 
 #### boolean veri tipi kullanımı:
 
@@ -107,3 +107,78 @@ let age: any = data.age;
 ```
 
 #### !!!! any tipini kullanırken dikkat etmeniz gerekir.
+````
+
+# DERS 2 UNİON TYPES,LİTERAL TYPES VE ARRAY
+
+### UNİON TYPES
+
+#### union types bir veya olayıdır.
+
+#### union types kullanmak için veya( | ) karakterini kullanmalısınız.
+
+#### union types ile bir değişkene birden fazla tipte veri eklenmesine izin veririz.
+
+#### örnek:
+
+```typescript
+// bu değişkene hem number hem de string veri tipini verebiliriz.
+let age: number | string = 21;
+```
+
+#### örnek2:
+
+```typescript
+// bu değişkene hem number hem string hem de boolean tipte veri atanabilir.
+let age: number | string | boolean = true;
+```
+
+### LİTERAL TYPES
+
+#### literal types ile de bir değişkene tip değil direkt veri belirleyebiliriz.
+
+#### örnek:
+
+```typescript
+// artık bu değişkene pending,approved,rejected dışında bir veri setlenemez.
+let statusResult: `pending` | `approved` | `rejected`;
+```
+
+#### yani literal type ile değer zorunluluğu ekleyebiliriz.
+
+### ARRAY
+
+#### typescriptte bir değişkene array tipini verebilirsiniz.
+
+#### TS de bu yöntem ile arrayler oluşturulur.
+
+#### önemli olan nokta arrayin içine gelecek olan verilerin tiplerini belirlemek gerekir.
+
+#### eğer tip belirlemeden array belirlerseniz hata alacaksınız.
+
+#### typescriptte array tanımlaması
+
+```typescript
+// names değişkenine tip olarak array verdik.
+// arrayimizin içine gelecek olan veriler de string tipinde olmalıdır.
+// string veri dışında bir veri arraye setlenirse hata alırsınız.
+let names: string[] = ["kubilay", "tansel", "şeyma"];
+```
+
+#### değişkene array tip tanımlamasının farklı bir yolu da vardır.
+
+#### örnek:
+
+```typescript
+// değişkene array tipi tanımlamak için farklı bir yol
+let names: Array<number> = [1, 2, 3];
+```
+
+#### isterseniz union types kullanarak arraye birden fazla tip ataması yapabiliriz.
+
+#### örnek:
+
+```typescript
+// arraye hem string hem de number setleyebiliriz.
+let mixedArray: (number | string)[] = [2, 3, 4, "kubilay"];
+```
