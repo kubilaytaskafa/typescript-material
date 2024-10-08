@@ -109,7 +109,7 @@ let age: any = data.age;
 #### !!!! any tipini kullanırken dikkat etmeniz gerekir.
 ````
 
-# DERS 2 UNİON TYPES,LİTERAL TYPES VE ARRAY
+# DERS 3 UNİON TYPES,LİTERAL TYPES VE ARRAY
 
 ### UNİON TYPES
 
