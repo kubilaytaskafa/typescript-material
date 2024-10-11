@@ -1,0 +1,45 @@
+			-typescript nedir?-
+
+typescript javascriptin gelişmiş halidir.
+
+örnek:
+
+!javascriptte bir yas değişkeni tanımlarız.
+
+let yas=20;
+
+*bu değişkene number olarak 20 string olarak "20" verebiliriz.
+yani verdiğimiz değere göre değişkenin tipi belirlenir.
+fakat biz bu durumu istemeyebiliriz.
+
+!javascriptte parametreden gelen 2 sayıyı toplayan ve konsola yazdıran bir fonksiyon tanımlayabiliriz.
+
+function topla(a,b){
+    console.log(a+b)
+}
+
+topla(3,"x")
+
+*fakat bu fonksiyona parametre olarak bir string verebiliriz. yukarıdaki fonksiyon konsola 3x yazdırır.
+*bizler bu fonksiyona string girilmesini istemeyebiliriz.
+
+!!! bizler typescript ile bir değişkenin veyahut fonksiyonun parametrelerinin hangi tipte olacağını belirleriz.
+
+
+
+		-typescript nasıl kurulur-
+react projelerimize typescript kurabilmek için:
+
+npm create vite@latest komutunu çalıştırdıktan sonra çıkan seçeneklerden typescripti seçeceğiz.
+
+örnek:
+
+√ Project name: ... typescriptDers
+√ Package name: ... typescriptders
+√ Select a framework: » React
+? Select a variant: » - Use arrow-keys. Return to submit.       
+>   TypeScript  !!!!
+    TypeScript + SWC
+    JavaScript
+    JavaScript + SWC
+    Remix ↗
